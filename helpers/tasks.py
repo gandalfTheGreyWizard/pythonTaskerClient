@@ -21,7 +21,7 @@ class Tasks:
                     self.tasks.append(each_task)
                     self.task_index = each_task['task_id']
         except Exception as e:
-            e.with_traceback(Exception)
+            print('no tasks dict found')
         # temp_task = {}
         # temp_task['task_id'] = int(task_object['task_id'])
         # temp_task['description'] = str(task_object['description'])

@@ -27,13 +27,13 @@ class Utils:
         """
             Return all the tasks in the current task list
         """
-        with open('tasks_dict', 'r') as f:
+        with open('tasks_dict.json', 'r') as f:
             return json.load(f)
     def save_tasks_to_file(self, tasks_dict):
         """
             Save the tasks to persistent file system
         """
-        with open('tasks_dict', 'w') as f:
+        with open('tasks_dict.json', 'w') as f:
             json.dump(tasks_dict, f, default=self.json_serializer)
     def list_tasks(self):
         """
