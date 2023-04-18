@@ -1,2 +1,3 @@
 venv
-tasks_dict
+tasks_dict.json
+**/*.pyc
